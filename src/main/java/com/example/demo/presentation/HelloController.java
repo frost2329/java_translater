@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.presentation;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -12,26 +12,29 @@ public class HelloController {
     private Button addWordButton;
     @FXML
     private TextField translateField;
+    @FXML
+    private TextField wordField;
 
-    private TranslateApi api = new TranslateApi();
-
-
-
-    /*@FXML
-    protected void addWordButton(){
-        labelText.setText("Welcome!");
-    }*/
+    private TranslatePresenter presenter;
 
     @FXML
     public void initialize() {
-        addWordButton.setOnAction((e)-> {
-            labelText.setText("Слово добавлено");
+        presenter = new TranslatePresenter();
+        presenter.attachVue(this);
+
+        wordField.setOnAction((e)-> {
+            String word = this.wordField.getText();
+            presenter.onChangeWord(word);
         });
 
-        translateField.setOnAction((e)-> {
-            String word = this.translateField.getText();
-            TranslateWord translateWord = api.getTranslateWord(word);
-            labelText.setText(translateWord.toString());
+        addWordButton.setOnAction((e)-> {
+            String word = this.wordField.getText();
+            String translate = this.translateField.getText();
+            presenter.onAddWord(word, translate);
         });
+    }
+
+    public void showResult(String translateWord) {
+        labelText.setText(translateWord);
     }
 }
