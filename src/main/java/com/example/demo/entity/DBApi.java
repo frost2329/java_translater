@@ -1,9 +1,8 @@
-package com.example.demo.domain;
+package com.example.demo.entity;
 
 import com.example.demo.db.DBConnector;
 
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 public class DBApi implements IDBApi {
     DBConnector connector = new DBConnector();
@@ -17,7 +16,7 @@ public class DBApi implements IDBApi {
             preparedStatement.setString(1, word);
             preparedStatement.setString(2, translate);
             preparedStatement.executeUpdate();
-            //connector.close();
+            connector.closeConnection();
             return "Слово добавлено";
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.example.demo.entity;
 
 public class TranslateApi implements ITranslateApi{
     @Override

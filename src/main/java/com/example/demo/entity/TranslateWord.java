@@ -1,14 +1,14 @@
-package com.example.demo.domain;
+package com.example.demo.entity;
 
 import java.util.Objects;
 
 public class TranslateWord {
     private String word;
-    private String translateWord;
+    private String translate;
 
     public TranslateWord (String word, String translateWord) {
         this.word = word;
-        this.translateWord = translateWord;
+        this.translate = translateWord;
     }
 
     public String getWord() {
@@ -19,12 +19,12 @@ public class TranslateWord {
         this.word = word;
     }
 
-    public String getTranslateWord() {
-        return translateWord;
+    public String getTranslate() {
+        return translate;
     }
 
-    public void setTranslateWord(String translateWord) {
-        this.translateWord = translateWord;
+    public void setTranslate(String translate) {
+        this.translate = translate;
     }
 
     @Override
@@ -32,19 +32,19 @@ public class TranslateWord {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TranslateWord that = (TranslateWord) o;
-        return Objects.equals(word, that.word) && Objects.equals(translateWord, that.translateWord);
+        return Objects.equals(word, that.word) && Objects.equals(translate, that.translate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(word, translateWord);
+        return Objects.hash(word, translate);
     }
 
     @Override
     public String toString() {
         return "TranslateWord{" +
                 "word='" + word + '\'' +
-                ", translateWord='" + translateWord + '\'' +
+                ", translateWord='" + translate + '\'' +
                 '}';
     }
 }

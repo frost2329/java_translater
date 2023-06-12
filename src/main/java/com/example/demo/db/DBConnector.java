@@ -31,5 +31,14 @@ public class DBConnector {
             System.out.println("Failed to make connection to database");
         }
     }
+    public void closeConnection() {
+        if (connection ==  null) return;
+        try {
+            connection.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("You successfully disconnected to database now");
+    }
 
 }
