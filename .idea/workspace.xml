@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4feea848-69bc-4817-a529-5a22e9798b42" name="Changes" comment="add DB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/ITranslateInteractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateInteractor.java" afterDir="false" />
+    <list default="true" id="4feea848-69bc-4817-a529-5a22e9798b42" name="Changes" comment="add disconnection to DB&#10;add service of show saved words with translate">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/db/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/db/DBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/DBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/DBApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/IDBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/IDBApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/ITranslateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/ITranslateApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/DBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/DBApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/IDBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/IDBApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/TranslatePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/TranslatePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,11 +89,19 @@
       <option name="project" value="LOCAL" />
       <updated>1686323934462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add disconnection to DB&#10;add service of show saved words with translate">
+      <created>1686557199837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686557199837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DB" />
+    <MESSAGE value="add disconnection to DB&#10;add service of show saved words with translate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add disconnection to DB&#10;add service of show saved words with translate" />
   </component>
 </project>

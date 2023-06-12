@@ -42,9 +42,6 @@ public class TranslateWord {
 
     @Override
     public String toString() {
-        return "TranslateWord{" +
-                "word='" + word + '\'' +
-                ", translateWord='" + translate + '\'' +
-                '}';
+        return word + " - " + translate;
     }
 }

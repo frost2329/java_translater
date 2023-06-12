@@ -14,7 +14,7 @@ public class TranslateInteractor implements ITranslateInteractor {
     DBApi dbApi = new DBApi();
     @Override
     public String getTranslateWord(String word) {
-        return api.getTranslateWord(word).getTranslate();
+        return "Перевод слова будет доступен в следующей версии  :)";
     }
     @Override
     public String saveWord(String word, String translate) {
@@ -22,30 +22,8 @@ public class TranslateInteractor implements ITranslateInteractor {
     }
 
     public ObservableList<TranslateWord> getTranslateWordsFromDB() {
-        List<TranslateWord> words = new ArrayList<>();
-        words.add(new TranslateWord("Слово", "Перевод"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-        words.add(new TranslateWord("Слово2", "Перевод2"));
-
-        ObservableList<TranslateWord> translateWords = FXCollections.observableArrayList(words);
-        return translateWords;
+        List<TranslateWord> wordsList = dbApi.getSavedWords();
+        ObservableList<TranslateWord> words = FXCollections.observableArrayList(wordsList);
+        return words;
     }
 }

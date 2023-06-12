@@ -3,7 +3,6 @@ package com.example.demo.db;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class DBConnector {
 
@@ -12,7 +11,7 @@ public class DBConnector {
     static final String USER = "postgres";
     static final String PASS = "root";
 
-    public static Connection connection;
+    public  Connection connection;
 
     public void init() throws SQLException {
         try {

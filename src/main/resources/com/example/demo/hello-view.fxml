@@ -8,9 +8,9 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <TextField fx:id="wordField" prefWidth="630.0" text="Введите слово" />
+   <TextField fx:id="wordField" prefWidth="630.0" promptText="Введите слово" />
     <Label fx:id="labelText" />
-    <TextField fx:id="translateField" text="Введите перевод" />
+    <TextField fx:id="translateField" promptText="Введите перевод" />
    <Button fx:id="addWordButton" mnemonicParsing="false" text="Сохранить слово" />
    <Button fx:id="showWordSButton" layoutX="290.0" layoutY="200.0" mnemonicParsing="false" text="Посмотреть сохраненные слова" />
    <ListView fx:id="wordsList" prefHeight="200.0" prefWidth="200.0" />

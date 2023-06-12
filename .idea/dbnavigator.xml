@@ -16,8 +16,11 @@
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
     </connection>
     <connection id="14094303-3d0b-4ebe-8f9e-cf78a02281f5">
-      <console name="Connection 1" type="STANDARD" schema="postgres" session="Main" />
-      <console name="Connection 1 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from words]]></console>
+      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from words
+/
+delete from words]]></console>
+      <console name="Connection 1 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from words order by id
+/]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
