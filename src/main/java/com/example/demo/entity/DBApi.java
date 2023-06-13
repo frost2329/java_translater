@@ -13,7 +13,7 @@ public class DBApi implements IDBApi {
     static final String SQL_INSERT = "insert into words (word, translate) values (?, ?);";
     static final String SQL_SELECT_ALL = "select distinct word, translate from words order by words.word";
 
-    DBConnector connector = new DBConnector();
+    DBConnector connector = DBConnector.getConnector();
 
     @Override
     public String addWordInDB(String word, String translate) {

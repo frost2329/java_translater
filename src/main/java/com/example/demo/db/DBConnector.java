@@ -7,13 +7,22 @@ import java.sql.SQLException;
 public class DBConnector {
 
     //  Database credentials
-    static final String DB_URL = "jdbc:postgresql://localhost:5432/postgres";
-    static final String USER = "postgres";
-    static final String PASS = "root";
+    private static final String DB_URL = "jdbc:postgresql://localhost:5432/postgres";
+    private static final String USER = "postgres";
+    private static final String PASS = "root";
+    private static DBConnector connector;
 
     public  Connection connection;
+    private DBConnector() {
 
-    public void init() throws SQLException {
+    }
+    public static  DBConnector getConnector() {
+        if(connector == null) {
+            connector = new DBConnector();
+        }
+        return connector;
+    }
+    public void init()  {
         try {
             System.out.println("PostgreSQL JDBC Driver successfully connected");
             connection = DriverManager
