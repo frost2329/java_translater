@@ -1,13 +1,9 @@
 package com.example.demo.presentation;
 
-import com.example.demo.entity.TranslateWord;
-import javafx.collections.FXCollections;
+import com.example.demo.domain.TranslateWord;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HelloController {
     @FXML
@@ -25,7 +21,6 @@ public class HelloController {
 
 
     private TranslatePresenter presenter;
-    private boolean isWordsListVisible = false;
 
     @FXML
     public void initialize() {
@@ -48,22 +43,19 @@ public class HelloController {
         presenter.onAddWord(word, translate);
         showWordSButton.setText("Показать сохраненные слова");
         wordsList.setVisible(false);
-        isWordsListVisible = false;
         wordField.clear();
         translateField.clear();
 
     }
 
     private void onShowSavedWords() {
-        if (!isWordsListVisible) {
+        if (!wordsList.isVisible()) {
             presenter.onShowTranslateWords();
             showWordSButton.setText("Скрыть сохраненные слова");
             wordsList.setVisible(true);
-            isWordsListVisible = true;
         } else {
             showWordSButton.setText("Показать сохраненные слова");
             wordsList.setVisible(false);
-            isWordsListVisible = false;
         }
     }
 

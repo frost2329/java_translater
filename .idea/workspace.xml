@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4feea848-69bc-4817-a529-5a22e9798b42" name="Changes" comment="refactoring&#10;add DB request select all">
+    <list default="true" id="4feea848-69bc-4817-a529-5a22e9798b42" name="Changes" comment="refactoring add pattern Singleton gor DBConnector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/db/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/db/DBConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/ITranslateInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/ITranslateInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateInteractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/DBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/DBApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/IDBApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/IDBApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/ITranslateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/ITranslateApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/TranslateWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/domain/TranslateWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/TranslatePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/presentation/TranslatePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686564584025</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactoring add pattern Singleton gor DBConnector">
+      <created>1686656151664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686656151664</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add DB" />
     <MESSAGE value="add disconnection to DB&#10;add service of show saved words with translate" />
     <MESSAGE value="refactoring&#10;add DB request select all" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring&#10;add DB request select all" />
+    <MESSAGE value="refactoring add pattern Singleton gor DBConnector" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring add pattern Singleton gor DBConnector" />
   </component>
 </project>

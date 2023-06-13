@@ -1,12 +1,13 @@
 package com.example.demo.presentation;
 
+import com.example.demo.domain.ITranslateInteractor;
 import com.example.demo.domain.TranslateInteractor;
 import com.example.demo.entity.DBApi;
 import com.example.demo.entity.TranslateApi;
 
 public class TranslatePresenter {
     HelloController vue;
-    TranslateInteractor interactor = new TranslateInteractor();
+    ITranslateInteractor interactor = new TranslateInteractor();
     public void attachVue(HelloController vue) {
         this.vue = vue;
     }

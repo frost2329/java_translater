@@ -10,4 +10,6 @@ module com.example.demo {
     opens com.example.demo.presentation to javafx.fxml;
     exports com.example.demo.entity;
     opens com.example.demo.entity to javafx.fxml;
+    exports com.example.demo.domain;
+    opens com.example.demo.domain to javafx.fxml;
 }

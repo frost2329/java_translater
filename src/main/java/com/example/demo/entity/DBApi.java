@@ -1,10 +1,10 @@
 package com.example.demo.entity;
 
 import com.example.demo.db.DBConnector;
+import com.example.demo.domain.TranslateWord;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;

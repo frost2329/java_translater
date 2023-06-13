@@ -1,17 +1,15 @@
 package com.example.demo.domain;
 
-import com.example.demo.entity.DBApi;
-import com.example.demo.entity.TranslateApi;
-import com.example.demo.entity.TranslateWord;
+import com.example.demo.entity.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TranslateInteractor implements ITranslateInteractor {
-    TranslateApi api = new TranslateApi();
-    DBApi dbApi = new DBApi();
+    ITranslateApi api = new TranslateApi();
+    IDBApi dbApi = new DBApi();
+
     @Override
     public String getTranslateWord(String word) {
         return "Перевод слова будет доступен в следующей версии  :)";
